@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="stylesheet" href="css/font-awesome/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Jost:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200;1,300;1,500&display=swap');
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4d94c79bdf.js"></script>
+  </head>
+  <body>
+    <section id="store" class="store py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto col-sm-6 text-center">
+                    <h1 class="text-capitalize"> Naomi's Library</h1>
+                </div>
+            </div>
+<!-- menus -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+                    <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all">all</a>
+
+                    <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="fiction">fiction</a>
+
+                    <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="non-fiction">non-fiction</a>
+
+                    <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="mongolian">mongolian</a>
+
+                    <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="biography">biography</a>
+
+                </div>
+            </div>
+<!-- search section -->
+            <div class="row">
+                <div class="col-10 mx-auto col-md-6">
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text search-box"
+                                      id="search-icon"><i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                            <input type="text"
+                            class="form-control"
+                            placeholder="search by author....."
+                            id="search-item">
+                        </div>
+                    </form>
+                </div>
+            </div>
+<!-- book lists -->
+            
+            <div class="row" 
+                 id="books">
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 book fiction">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/fic-1.jpg" alt="" class="card-img-top book-img">
+                            <span class="book-item-icon">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>"Harry Potter and The Sorcerer's Stone" by J.K Rowling</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- the end of cards section -->
+                 </div>
+                
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 book non-fiction">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/nfic-1.jpg" alt="" class="card-img-top book-img">
+                            <span class="book-item-icon">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>"How not to die" by michael greger</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- the end of cards section -->
+                 </div>
+
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 book biography">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/bio-1.jpg" alt="" class="card-img-top book-img">
+                            <span class="book-item-icon">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>"steve jobs" by walter isaacson</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- the end of cards section -->
+                 </div>
+
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 book mongolian">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/mgl-1.jpg" alt="" class="card-img-top book-img">
+                            <span class="book-item-icon">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>"black white red" by ayurzana</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- the end of cards section -->
+                 </div>
+
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 book fiction">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/fic-2.jpg" alt="" class="card-img-top book-img">
+                            <span class="book-item-icon">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>"Harry Potter and The chamber of secrets" by J.K Rowling</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- the end of cards section -->
+                 </div>
+
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 book non-fiction">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/nfic-2.png" alt="" class="card-img-top book-img">
+                            <span class="book-item-icon">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>"sapiens a brief history of humankind" by yuval noah harari</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- the end of cards section -->
+                 </div>
+
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 book biography">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/bio-2.jpg" alt="" class="card-img-top book-img">
+                            <span class="book-item-icon">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>"becoming michelle obama" by michelle obama</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- the end of cards section -->
+                 </div>
+
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 book mongolian">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/mgl-2.jpeg" alt="" class="card-img-top book-img">
+                            <span class="book-item-icon">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>"Tsoilogsod" by Bujinlkham</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- the end of cards section -->
+                 </div>
+
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 book fiction">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/fic-3.jpg" alt="" class="card-img-top book-img">
+                            <span class="book-item-icon">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>"Harry Potter and The prisoner of azkaban " by J.K Rowling</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- the end of cards section -->
+                 </div>
+
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 book non-fiction">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/nfic-3.jpg" alt="" class="card-img-top book-img">
+                            <span class="book-item-icon">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>"atomic habits" by james clear</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- the end of cards section -->
+                 </div>
+
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 book biography">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/bio-3.jpeg" alt="" class="card-img-top book-img">
+                            <span class="book-item-icon">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>"Queen of our times the life of elizabeth ||" by robert hardman</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- the end of cards section -->
+                 </div>
+
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 book mongolian">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/mgl-3.jpg" alt="" class="card-img-top book-img">
+                            <span class="book-item-icon">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>"Sunsnii Tomiyo" by ayurzana</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- the end of cards section -->
+                 </div>
+
+
+
+            </div>
+                
+                 
+
+         </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+  </body>

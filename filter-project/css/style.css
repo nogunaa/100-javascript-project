@@ -1,0 +1,78 @@
+:root{
+    --mainPink: #D4A296; 
+    --mainYellow: #F2EFC7;
+    --mainBlack: #1B1B1B;
+    --mainGray: #F5F5F5;
+    --mainWhite: white;
+
+}
+.store{
+    background-color: var(--mainGray);
+}
+
+body{
+    font-family: 'Caveat', cursive;
+}
+
+.btn-black{
+    color: var(--mainBlack) !important;
+    border-color: var(--mainBlack) !important;
+}
+
+.btn-black:hover{
+    color: var(--mainPink) !important;
+    background-color: var(--mainBlack) !important;
+}
+
+.search-box{
+    background: var(--mainPink);
+    color: var(--mainBlack);
+}
+
+.img-container{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img-container:hover .book-item-icon{
+    transform: translate(0,0);
+}
+
+.book-item-icon:hover{
+    color: var(--mainWhite);
+}
+
+.book-img{
+    transition: all 1s ease-in-out;
+}
+
+.img-container:hover .book-img{
+    transform: scale(1.2);
+}
+
+.book-item-icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.75rem;
+    background: var(--mainPink);
+    border-top-left-radius: 1rem;
+    transition: all 1s ease-in-out;
+    transform: translate(100%, 100%);
+}
+
+.book-img{
+    width: 416px;
+    height: 580px;
+}
+
+.card-body{
+    width: 414px;
+    height: 88px;
+}
+
+#search-item{ 
+    padding: 2px;
+     
+}

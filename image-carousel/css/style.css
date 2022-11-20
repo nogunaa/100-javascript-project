@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #000;
+    color: white;
+}
+
+.image-slider {
+    min-height: 30em;
+    height: 100vh;
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+.image-slider * {
+    box-sizing: border-box;
+}
+
+.caption {
+    background: linear-gradient(rgba(0, 0, 0, 0),
+    #000 );
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4em 1em 2em 1em;
+    text-align: center;
+}
+
+.caption p {
+    color: gray;
+}
+
+.arrow-left, 
+.arrow-right {
+    background-color: #fff;
+    color: black;
+    position: absolute;
+    top: 40%;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background: #000;
+    color: #fff;
+}
+
+.arrow-left {
+    left: 1em;
+}
+
+.arrow-right {
+    right: 1em;
+}
+
+/* class for Javascript toggle */
+.image-fade {
+    animation: imgFade 0.5s ease-in-out;
+}
+
+@keyframes imgFade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

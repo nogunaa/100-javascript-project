@@ -1,0 +1,24 @@
+body{
+    background-color:#f49ac2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 20%;
+    color:white;
+    align-items: center;
+}
+
+.decreaseBtn, .resetBtn, .increaseBtn{
+    cursor: pointer;
+    width: 200px;
+    height: 50px;   
+    border-style: none;
+    background: #fadadd;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    border-radius: 4px;
+    padding: 3px;
+    text-align: center;
+}
